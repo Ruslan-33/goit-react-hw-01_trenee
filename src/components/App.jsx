@@ -1,12 +1,18 @@
-import OfficerProfile from "./OfficerProfile"
+import Profile from './Profile/Profile';
+import userData from '../userData.json';
+// import userData from './userData.json';
 
 export default function App() {
   return (
     <>
-      <h1>Available officers</h1>
-      <OfficerProfile name="Jacob Mercer" />
-      <OfficerProfile name="Andrew"/>
-      <OfficerProfile />
+      <Profile
+        // name={userData.username}
+        // tag={userData.tag}
+        // location={userData.location}
+        // image={userData.avatar}
+        // stats={userData.stats}
+        Profile={Profile}
+      />
     </>
-  )
+  );
 }
